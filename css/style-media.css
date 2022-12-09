@@ -1,0 +1,28 @@
+@media only screen and (max-width: 850px) {
+  .add-task .add-task-btn:hover {
+    animation: none;
+    background-image: linear-gradient(to right, blue 50%, tomato 50%);
+  }
+  .tasks-list .task #add-desc:hover {
+    color: rgb(0, 199, 0);
+  }
+  .tasks-list .task .remove-task {
+    color: tomato;
+  }
+  .add-task {
+    width: 100%;
+  }
+  .main {
+    height: 100%;
+  }
+  .main .container {
+    width: 100%;
+    padding: 50px 15px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .add-task .add-task-btn:hover {
+    animation: none;
+    background-image: linear-gradient(to right, blue 50%, tomato 50%);
+  }
+}

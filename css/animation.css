@@ -1,0 +1,44 @@
+@keyframes changeColor {
+  from {
+    background: linear-gradient(to right, blue 50%, tomato 50%);
+  }
+  10% {
+    background: linear-gradient(to right, blue 37%, tomato 38%, tomato 70%);
+  }
+  20% {
+    background: linear-gradient(to right, blue 33%, tomato 34%, tomato 80%);
+  }
+  30% {
+    background: linear-gradient(to right, blue 29%, tomato 30%, tomato 80%);
+  }
+  40% {
+    background: linear-gradient(to right, blue 25%, tomato 26%, tomato 80%);
+  }
+  50% {
+    background: linear-gradient(to right, blue 22%, tomato 22%, tomato 80%);
+  }
+  60% {
+    background: linear-gradient(to right, blue 18%, tomato 19%, tomato 80%);
+  }
+  70% {
+    background: linear-gradient(to right, blue 14%, tomato 15%, tomato 80%);
+  }
+  75% {
+    background: linear-gradient(to right, blue 10%, tomato 11%, tomato 80%);
+  }
+  80% {
+    background: linear-gradient(to right, blue 6%, tomato 7%, tomato 80%);
+  }
+  85% {
+    background: linear-gradient(to right, blue 2%, tomato 3%, tomato 80%);
+  }
+  90% {
+    background: linear-gradient(to right, blue 1%, tomato 2%, tomato 80%);
+  }
+  95% {
+    background: linear-gradient(to right, blue 0.5%, tomato 1%, tomato 80%);
+  }
+  to {
+    background: linear-gradient(to right, blue 0%, tomato 1%, tomato 100%);
+  }
+}

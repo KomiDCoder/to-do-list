@@ -1,0 +1,158 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+@font-face {
+  font-family: laBelle;
+  src: url(../fonts/La-Belle-Aurore/LaBelleAurore-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../desk.jpg);
+  background-repeat: repeat-y;
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 5px;
+  min-height: 40%;
+  justify-content: stretch;
+  align-items: center;
+  width: 60%;
+  max-width: 1200px;
+}
+.add-task {
+  width: 100%;
+  display: flex;
+  gap: 4px;
+  align-items: stretch;
+}
+.add-task .input-task {
+  font-family: laBelle;
+  text-transform: capitalize;
+  width: calc(80% - 5px);
+  font-size: large;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 8px 20px;
+  border: none;
+  border: 1px solid black;
+}
+.add-task .input-task:focus {
+  outline: 1px solid gray;
+  border-radius: 10px;
+}
+.add-task .add-task-btn {
+  font-family: laBelle;
+  color: black;
+  font-weight: bolder;
+  border-radius: 10px;
+  text-transform: capitalize;
+  width: calc(20% - 5px);
+  padding: 12px 8px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, blue 50%, tomato 50%);
+  box-shadow: 2px 2px white, 5px 4px tomato;
+}
+.add-task .add-task-btn:hover {
+  animation: changeColor 0.3s linear;
+  background: tomato;
+}
+.add-task .add-task-btn:active {
+  box-shadow: none;
+}
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+.tasks-list .task {
+  width: 100%;
+  font-family: laBelle;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+.tasks-list .task .side-line {
+  border-right: 2px dashed red;
+  width: 4px;
+}
+.tasks-list .task .task-content {
+  font-weight: bold;
+  font-size: 22px;
+  box-sizing: border-box;
+  width: calc(75% - 4px);
+  word-wrap: break-word;
+  padding: 0 9px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #1b7ced;
+}
+.tasks-list .task .task-content.done {
+  text-decoration: line-through;
+}
+.tasks-list .task #add-desc,
+.tasks-list .task .remove-task {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: laBelle;
+  background: white;
+  border: none;
+  border-left: 2px dashed rgb(193, 0, 0);
+  font-size: 18px;
+  font-style: italic;
+  color: pink;
+}
+.tasks-list .task .remove-task {
+  width: 10%;
+}
+.tasks-list .task .remove-task:hover {
+  transition: 0.5s all linear;
+  color: tomato;
+}
+.tasks-list .task #add-desc {
+  width: 15%;
+  transition: 0.5s all linear;
+  color: rgb(0, 199, 0);
+}
+.tasks-list .task #add-desc:hover {
+  color: rgb(1, 91, 1);
+}
+.tasks-list #task-desc {
+  text-transform: capitalize;
+  font-family: laBelle;
+  font-weight: bolder;
+  background: #c8c889;
+  width: 75%;
+  padding: 0px 0px 5px 5px;
+  border: none;
+}
+.tasks-list #task-desc:focus {
+  outline: none;
+}
+.tasks-list #task-desc.display-none {
+  display: none;
+}
