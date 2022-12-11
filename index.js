@@ -14,10 +14,10 @@ function init() {
       var removeTask = document.createElement("button");
       var taskDate = new Date();
       var taskDateYear = taskDate.getFullYear().toString();
-      var taskDateMonth = taskDate.getMonth().toString();
-      var taskDateDay = taskDate.getDay().toString();
+      var taskDateMonth = (taskDate.getMonth() + 1).toString();
+      var taskDateDay = taskDate.getDate();
       var taskFullDate =
-        taskDateDay + "/" + taskDateMonth + "/" + taskDateYear + ":" + " ";
+        taskDateMonth + "/" + taskDateDay + "/" + taskDateYear + ":" + " ";
       sideLine.setAttribute("class", "side-line");
       taskContent.setAttribute("class", "task-content");
       removeTask.setAttribute("class", "remove-task");
@@ -59,7 +59,7 @@ function init() {
       removeTask.addEventListener("click", removeDescripton);
       taskContent.addEventListener("click", taskDone);
     } else {
-      alert("do not accept");
+      alert("Task Must Be At Least '3' Character");
     }
   }
   function checkEnterKey(event) {
